@@ -1,11 +1,13 @@
 class PostsController < ApplicationController
-  before_action :find_post, only: [:show]
+  before_action :find_post, :only => [:show, :edit, :delete]
 
   def index
     @posts = Post.all.order('created_at DESC')
   end
 
-  def new; end
+  def new
+    # index
+  end
 
   def create
     @post = Post.new(post_params)
@@ -14,7 +16,17 @@ class PostsController < ApplicationController
     redirect_to @post
   end
 
-  def show; end
+  def show
+    # show
+  end
+
+  def edit
+    # code here
+  end
+
+  def delete
+    # code here
+  end
 
   private
 
