@@ -15,10 +15,3 @@
 /log/*
 !/log/.keep
 /tmp
-
-# Ignore RubyMine
-.idea
-
-# Ignore VS Code
-.code
-.vs
